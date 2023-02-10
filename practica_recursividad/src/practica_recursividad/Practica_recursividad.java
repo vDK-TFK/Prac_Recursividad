@@ -43,6 +43,11 @@ public class Practica_recursividad {
                 
             } else if (opcion == 3) {
                 
+                Ejercicio3 myBinary = new Ejercicio3();
+                 int Numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese"
+                         + "el numero que desea clasificar: "));
+                 JOptionPane.showMessageDialog(null,myBinary.identBin(Numero));
+                
             } else if (opcion == 4) {
                 Ejercicio4 c = new Ejercicio4();
                 int exponencial = (int) c.calcExponencial(5, 2);
