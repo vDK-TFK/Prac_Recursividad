@@ -31,6 +31,15 @@ public class Practica_recursividad {
                 Ejercicio1 Consonantes = new Ejercicio1();
                 Consonantes.vocales(args);
             } else if (opcion == 2) {
+                Ejercicio2 suma = new Ejercicio2();
+                 
+                 int Numero = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese "
+                         + "el numero hasta el que desea sumar: "));
+                 
+                 int sumaNat = suma.sumaNumNat(Numero);
+                 
+                 JOptionPane.showMessageDialog(null,"La suma de todos"
+                         + " los numeros naturales hasta "+ Numero+ " es: "+ sumaNat);
                 
             } else if (opcion == 3) {
                 
