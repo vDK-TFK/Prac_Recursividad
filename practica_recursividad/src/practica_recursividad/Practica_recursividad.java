@@ -17,7 +17,7 @@ public class Practica_recursividad {
      */
     public static void main(String[] args) {
         int opcion = 0;
-
+        
         while (opcion != 5) {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                     "Ingrese el numero de la opcion que desea escoger: \n"
@@ -26,12 +26,14 @@ public class Practica_recursividad {
                     + "3. Ejercicio 3\n"
                     + "4. Ejercicio 4\n"
                     + "5. Salir"));
-
+            
             if (opcion == 1) {
+                Ejercicio1 Consonantes = new Ejercicio1();
+                Consonantes.vocales(args);
             } else if (opcion == 2) {
-
+                
             } else if (opcion == 3) {
-
+                
             } else if (opcion == 4) {
                 Ejercicio4 c = new Ejercicio4();
                 int exponencial = (int) c.calcExponencial(5, 2);
@@ -43,7 +45,7 @@ public class Practica_recursividad {
                 System.out.printf("========= Ahora con recursividad =========\n");
                 System.out.printf("El valor que da al calcular exponencial con recursividad es: %d\n", exponencialRec);
                 System.out.printf("El valor que da al calcular factorial con recursividad es: %d\n", factorialRec);
-
+                
             } else if (opcion == 5) {
                 JOptionPane.showMessageDialog(null, "Ha "
                         + "seleccionado la opcion de salir, muchas gracias");
@@ -53,5 +55,5 @@ public class Practica_recursividad {
             }
         }
     }
-
+    
 }
