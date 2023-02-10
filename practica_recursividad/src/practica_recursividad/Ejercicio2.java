@@ -1,13 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package practica_recursividad;
 
-/**
- *
- * @author andre
- */
+
 public class Ejercicio2 {
+    
+    public int sumaNumNat(int n){
+        if (n == 0){
+            return 0;             
+        } else{
+            return n + sumaNumNat(n-1);
+        }
+    }
     
 }
